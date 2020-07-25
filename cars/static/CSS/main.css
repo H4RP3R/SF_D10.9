@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -14,17 +15,19 @@ h1, h4 {
     padding: 5px;
     border: 1px solid silver;
     border-radius: 5px;
-    max-height: 96vh;
+    min-height: 691px;
+    max-height: 97vh;
     overflow: hidden;
     overflow-y: scroll;
 }
 
 .table-wrapper td {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 tbody tr {
     line-height: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 tbody tr:hover {
@@ -32,7 +35,7 @@ tbody tr:hover {
 }
 
 a h1 {
-    color: rgba(0, 0, 0 ,0.9);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 a:hover {

@@ -6,7 +6,7 @@
     <div class="col-lg-3">
         <a href="/">
             <div class="row">
-                <h1>Car Finder</h1>
+                <h1 class="mt-3">Car Finder</h1>
             </div>
         </a>
         <div class="row">
@@ -14,7 +14,7 @@
         </div>
         <div class="row">
             <form class="" method="get">
-                <div class="site-menu">
+                <div class="site-menu shadow p-3 mb-5 bg-white rounded">
                     <div class="form-group">
 
                         <label for="car-manufacturer">производитель</label>
@@ -62,7 +62,7 @@
         </div>
     </div>
     <div class="col-lg-9">
-        <div class="table-wrapper">
+        <div class="table-wrapper shadow p-3 mb-5 bg-white rounded">
             <table class="table table-striped">
                 <thead class="thead-dark">
                     <tr>
@@ -81,7 +81,7 @@
                         <td>{{ car.transmission_display }}</td>
                         <td>{{ car.year }}</td>
                         <td>
-                            <div class="color-box" style="background-color:{{ car.color.hex }};">
+                            <div title="{{ color.name }}" class="color-box" style="background-color:{{ car.color.hex }};">
                             </div>
                         </td>
                     </tr>
