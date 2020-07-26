@@ -11,11 +11,11 @@ class Car(models.Model):
         (1, 'автомат'),
         (2, 'робот'),
     )
-    transmission = models.SmallIntegerField()
+    transmission = models.SmallIntegerField(choices=TRANSMISSION_CHOICES)
     color = models.ForeignKey('Color', on_delete=models.DO_NOTHING)
 
     def __str__(self):
-        return f'{self.manufacturer} {self.model} ({self.year})'
+        return f'{self.manufacturer} {self.model} ({self.year}) ID:{self.pk}'
 
     def transmission_display(self):
         return self.TRANSMISSION_CHOICES[self.transmission][1]
@@ -26,4 +26,4 @@ class Color(models.Model):
     hex = models.CharField(max_length=7)
 
     def __str__(self):
-        return f'{self.name} [{self.hex}]'
+        return f'{self.name}'
